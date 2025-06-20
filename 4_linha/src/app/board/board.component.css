@@ -1,0 +1,47 @@
+/* -----CSS BOARD-----*/
+
+.tabuleiro-container {
+    display: flex;
+    /* Ativa o flexbox */
+    flex-direction: column;
+    /* Elementos em coluna */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    background: #332D56;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: #4E6688;
+  border-radius: 50%;
+  border: 3px solid #6982a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Garante que a peça fique centralizada dentro da célula */
+}
+.piece {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.2s;
+}

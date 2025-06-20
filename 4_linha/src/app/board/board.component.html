@@ -1,0 +1,22 @@
+<div class="game-container">
+    <h2>Tabuleiro 4 em Linha</h2>
+  <h3>Jogador atual: <span [style.color]="currentPlayer === 'red' ? 'red' : 'yellow'">{{ currentPlayer }}</span></h3>
+  <div class="tabuleiro-container">
+      <div class="board">
+        <div class="row" *ngFor="let row of board; let i = index">
+          <div 
+            class="cell" 
+            *ngFor="let cell of row; let j = index"
+            (click)="dropPiece(j)">
+            <div 
+              class="piece" 
+              [style.background]="cell === 'red' ? 'red' : cell === 'yellow' ? 'yellow' : 'transparent'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <button (click)="newGame()">Novo Jogo</button>
+</div>
