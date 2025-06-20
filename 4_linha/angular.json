@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto_final-pw2": {
+    "4_linha": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/projeto_final-pw2",
+            "outputPath": "dist/4_linha",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projeto_final-pw2:build:production"
+              "buildTarget": "4_linha:build:production"
             },
             "development": {
-              "buildTarget": "projeto_final-pw2:build:development"
+              "buildTarget": "4_linha:build:development"
             }
           },
           "defaultConfiguration": "development"
